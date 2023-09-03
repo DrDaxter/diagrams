@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-03T03:04:43.607Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="OjNr43NCIIr5hlBPYl8t" version="21.7.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-03T03:34:59.068Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="hRD03JCctcf9uVdYyDKV" version="21.7.1" type="github">
   <diagram name="Page-1" id="JjEwmtj5MDWn0N0PvPRe">
-    <mxGraphModel dx="2107" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1730" dy="1663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -103,6 +103,18 @@
             <mxPoint x="130" y="600" as="sourcePoint" />
             <mxPoint x="80" y="470" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="JZs5IUJt6lr9gzF4YLtZ-22" value="Contacts Information" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-280" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JZs5IUJt6lr9gzF4YLtZ-23" value="id: Integer (PK)&lt;br&gt;website: Varchar&lt;br&gt;email: Char(60) UNIQUE&lt;br&gt;whatsapp: Char(20) UNIQUE&lt;br&gt;phone number: Char(20) UNIQUE" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="JZs5IUJt6lr9gzF4YLtZ-22">
+          <mxGeometry y="50" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JZs5IUJt6lr9gzF4YLtZ-24" value="Users" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="-280" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JZs5IUJt6lr9gzF4YLtZ-25" value="id: Integer (PK)&lt;br&gt;id role: Integer FK&lt;br&gt;contact information: Integer FK&lt;br&gt;password: Char(30)&lt;br&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="JZs5IUJt6lr9gzF4YLtZ-24">
+          <mxGeometry y="50" width="200" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
